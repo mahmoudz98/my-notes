@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:mynotes/constant/routes.dart';
 import 'package:mynotes/firebase_options.dart';
 import 'dart:developer' as devtools show log;
 
@@ -73,7 +74,7 @@ class _LoginViewState extends State<LoginView> {
                                       email: email, password: password);
 
                           Navigator.of(context).pushNamedAndRemoveUntil(
-                              '/notes/', (route) => false);
+                              notesRoute, (route) => false);
                         } on FirebaseAuthException catch (e) {
                           if (e.code == 'invalid-credential') {
                             devtools.log("User not found");
@@ -87,7 +88,7 @@ class _LoginViewState extends State<LoginView> {
                     TextButton(
                         onPressed: () {
                           Navigator.of(context).pushNamedAndRemoveUntil(
-                              '/register/', (route) => false);
+                              registerRoute, (route) => false);
                         },
                         child: Text("Not register yet? Register here"))
                   ],
