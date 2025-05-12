@@ -1,0 +1,2 @@
+/home/mahmoudabdahafeez/AndroidStudioProjects/mynotes/android/app/.cxx/Debug/3plw6js2/x86_64/CMakeFiles/edit_cache.dir
+/home/mahmoudabdahafeez/AndroidStudioProjects/mynotes/android/app/.cxx/Debug/3plw6js2/x86_64/CMakeFiles/rebuild_cache.dir
